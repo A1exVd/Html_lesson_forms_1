@@ -103,7 +103,7 @@ legend {
   text-align: left;
   font-size: 14px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .account-info input {
@@ -113,6 +113,10 @@ legend {
   color: #636466;
   width: 100%;
   margin-top: 5px;
+}
+
+label[for="last_name"] {
+  margin-bottom: 18px;
 }
 
 label[for="email"] {
@@ -189,8 +193,8 @@ label[for="ww_submit_confirm2"] {
 
 input[type="text"], input[type="email"],  select, textarea {
   width: 100%;
-  font-size: 10.5px;
-  padding: 4px 2px 4px 5px;
+  font-size: 11px;
+  padding: 4px 3px 4px 3px;
  
 }
 
