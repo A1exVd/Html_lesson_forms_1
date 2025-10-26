@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Использование веб-форм на сайте</title>
+  <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <main>
+        <article>
+            <h1>Регистрация</h1>
+            <hr>
+            <div class="intro-container">
+                <img src="./images/Vkontakte.gif" alt="vk">
+                <p>
+                    <span>ВКонтакте.ру</span> - сетевой проект, который поможет Вам узнать больше о людях, которые Вас
+                    окружают, а также найти потерянных друзей и поддерживать с ними связь. Вы сможете
+                    делиться информацией, ограничивая круг лиц, которым она будет доступна.
+                </p>
+            </div>
+
+            <form action="/signup" method="POST">
+                <fieldset class="credentials">
+                    <legend>Имя</legend>
+                    <hr>
+                    <div class="credentials-container">
+                        <label for="first_name">Имя:</label>
+                        <input type="text" name="first_name" id="first_name">
+                        <span>Допускаются только настоящие имя и фамилия</span>
+                        
+                        <label for="last_name">Фамилия:</label>
+                        <input type="text" name="last_name" id="last_name">
+                        <span>Остальные регистрации будут удаляться</span>
+                        
+                        <label for="email">E-Mail:</label>
+                        <input type="text" name="email" id="email" required class="email notnull">
+                        <span class="empty-square"></span>
+
+                        <label for="password">Пароль:</label>
+                        <input type="password" name="password" id="password" required class="notnull">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Образование</legend>
+                    <hr>
+                    <div class="education-container">
+                        <label for="country">Страна:</label>
+                        <select name="country" id="country">
+                            <option value="Россия">Россия</option>
+                            <option value="Беларусь">Беларусь</option>
+                            <option value="Украина">Украина</option>
+                            <option value="Туркменистан">Туркменистан</option>
+                            <option value="Армения">Армения</option>
+                            <option value="Азербайджан">Азербайджан</option>
+                            <option value="Молдавия">Молдавия</option>
+                            <option value="Литва">Литва</option>
+                            <option value="Польша">Польша</option>
+                            <option value="Латвия">Латвия</option>
+                            <option value="Эстония">Эстония</option>
+                            <option value="Киргизия">Киргизия</option>
+                            <option value="Грузия">Грузия</option>
+                            <option value="Казахстан">Казахстан</option>
+                            <option value="Соломоновы Острова">Соломоновы Острова</option>
+                            <option value="Сейшельские Острова">Сейшельские Острова</option>
+                            <option value="Великобритания">Великобритания</option>
+                            <option value="Германия">Германия</option>
+                            <option value="Франция">Франция</option>
+                            <option value="Турция">Турция</option>
+                            <option value="США">США</option>
+                        </select>
+                        <label for="city">Город:</label>
+                        <div>
+                            <select name="city" id="city">
+                                <option value="Минск">Минск</option>
+                                <option value="Москва">Москва</option>
+                                <option value="Витебск">Витебск</option>
+                                <option value="Могилев">Могилев</option>
+                                <option value="Киев">Киев</option>
+                                <option value="Баку">Баку</option>
+                                <option value="Фаниполь">Фаниполь</option>
+                                <option value="Держинск">Держинск</option>
+                                <option value="Гомель">Гомель</option>
+                                <option value="Брест">Брест</option>
+                                <option value="Орша">Орша</option>
+                                <option value="Барановичи">Барановичи</option>
+                                <option value="Пермь">Пермь</option>
+                                <option value="Могилев">Могилев</option>
+                                <option value="Лондон">Лондон</option>
+                                <option value="Рим">Рим</option>
+                                <option value="Нью-йорк">Нью-йорк</option>
+                                <option value="Берлин">Берлин</option>
+                                <option value="Варшава">Варшава</option>
+                                <option value="Париж">Париж</option>
+                                <option value="Анкара">Анкара</option>
+                                <option value="Амстердам">Амстердам</option>
+                                <option value="Копенгагин">Копенгагин</option>
+                                <option value="Токио">Токио</option>
+                                <option value="Пермь">Пермь</option>
+                            </select>
+                            <p>Город, где Вы учились в школе или вузе:</p>
+                        </div>
+                    </div>
+                    <fieldset class="school">
+                        <legend>Школа</legend>
+                        <hr>
+                        <label for="school">Школа:
+                            <select name="school" id="school">
+                                <option value="none">- Выберите школу -</option>
+                                <option value="СШ№1">СШ № 1</option>
+                                <option value="СШ№2">СШ № 2</option>
+                                <option value="СШ№3">СШ № 3</option>
+                                <option value="СШ№4">СШ № 4 им. Ф. Скорины</option>
+                                <option value="Гимназия№1">Гимназия № 1</option>
+                                <option value="Гимназия№2">Гимназия № 2</option>
+                                <option value="Гимназия№3">Гимназия № 3</option>
+                                <option value="Гимназия№4">Гимназия № 4</option>
+                                <option value="Гимназия№5">Гимназия № 5</option>
+                                <option value="Гимназия№6">Гимназия № 6</option>
+                                <option value="Гимназия№24">Гимназия № 24</option>
+                                <option value="Гимназия№20">Гимназия № 20</option>
+                                <option value="Гимназия№31">Гимназия № 31</option>
+                            </select>
+                        </label>   
+                    </fieldset>
+                    <fieldset class="university">
+                        <legend>Университет</legend>
+                        <hr>
+                        <label for="university">Вуз:
+                            <select name="university" id="university">
+                                <option value="none">- Выберите ВУЗ -</option>
+                                <option value="БГУ">БГУ</option>
+                                <option value="БГПУ">БГПУ</option>
+                                <option value="МГТУ">МГТУ им. Н.Э.Баумана</option>
+                                <option value="МГУ">МГУ</option>
+                                <option value="БГУИР">БГУИР</option>
+                                <option value="БГПА">БГПА</option>
+                            </select>
+                        </label>   
+                    </fieldset>
+                </fieldset>
+                <input type="submit" value="Зарегистрироваться">
+                <p class="conditions">
+                    Фактом регистрации Вы соглашаетесь с <a href="/conditions">
+                    Пользовательским соглашением
+                </a>
+                </p>
+            </form>
+        </article>
+  </main>
+</body>
+</html>

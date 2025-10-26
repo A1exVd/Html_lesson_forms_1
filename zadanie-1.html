@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Использование веб-форм на сайте</title>
+  <link rel="stylesheet" href="css/style1.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Форма регистрации на сайте</h1>
+  </header>
+  <main>
+    <article class="c1">
+      <h2>Добро пожаловать на наш сайт!</h2>
+      <form action="/signup" method="POST">
+        <fieldset class="account-info">
+          <legend>Для регистрации введите свои данные:</legend>
+          <label for="first_name">Имя
+            <input type="text" name="first_name" id="first_name">
+          </label>
+          <label for="last_name">Фамилия
+            <input type="text" name="last_name" id="last_name">
+          </label>
+          <label for="email">Email
+            <input type="email" name="email" id="email" required class="email notnull">
+          </label>
+          <label for="phone">Телефон
+            <input type="tel" name="phone" id="phone" required class="notnull"
+              placeholder="+375 (код оператора) 111-11-11">
+          </label>
+          <label for="country">Страна
+            <select name="country" id="country">
+              <option value="Беларусь">Беларусь</option>
+              <option value="Россия">Россия</option>
+              <option value="Украина">Украина</option>
+              <option value="Польша">Польша</option>
+              <option value="Литва">Литва</option>
+              <option value="Латвия">Латвия</option>
+              <option value="Эстония">Эстония</option>
+              <option value="США">США</option>
+            </select>
+          </label>
+          <label for="password">Пароль
+            <input type="password" name="password" id="password" required>
+          </label>
+          <label for="password_confirm">Подтвердите пароль
+            <input type="password" name="password_confirm" id="password_confirm" required>
+          </label>
+        </fieldset>
+        <fieldset class="account-action">
+          <label for="ww_submit_confirm">
+            <input type="checkbox" name="ww_submit_confirm" id="ww_submit_confirm" checked required >&nbsp;Отметьте для подтверждения согласия 
+            <a href="/подключение/правила-использования-услуги" target="_blank" rel="noopener">с правилами использования
+              услуги
+            </a>
+          </label>
+          <br>
+          <label for="ww_submit_confirm2">
+            <input type="checkbox" name="ww_submit_confirm2" id="ww_submit_confirm2" checked required>&nbsp;Отметьте для согласия на обработку персональных данных в
+                соответствии с 
+            <a href="/соглашение-об-обработке-персональных-данных" target="_blank" rel="noopener">Соглашением об
+              обработке персональных данных
+            </a>
+          </label>
+          <br>
+          <input class="btn" type="submit" name="submit" value="Зарегистрироваться">
+        </fieldset>
+      </form>
+    </article>
+  </main>
+  <footer class="foot">
+  &#169; 2025, Официальный сайт Вдовиченко Александра Юрьевича
+  </footer>
+</body>
+</html>
